@@ -1,7 +1,9 @@
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f8f9fa;
-    color: #343a40;
+    font-family: 'Aptos', sans-serif;
+    background-color: #f5f7fa;
+    color: #2c3e50;
+    margin: 0;
+    padding: 0;
 }
 
 .container {
@@ -9,45 +11,95 @@ body {
     background: #ffffff;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-h1 {
+/* Header Section */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #90caf9;
+    color: #2c3e50;
+    padding: 20px;
+    border-radius: 8px 8px 0 0;
+}
+
+header h1 {
     font-size: 2rem;
-    color: #007bff;
     font-weight: bold;
+    margin: 0;
+    color: #1565c0;
 }
 
+header h3 {
+    font-size: 1.3rem;
+    margin: 5px 0 0;
+    color: #2c3e50;
+}
+
+header div p, header div a {
+    font-size: 1rem;
+    color: white;
+    margin: 0;
+}
+
+/* Section Titles */
 h2 {
-    border-bottom: 2px solid #007bff;
-    padding-bottom: 5px;
-    margin-top: 20px;
+    border-bottom: 3px solid #64b5f6;
+    padding-bottom: 8px;
+    margin-top: 25px;
     font-size: 1.5rem;
-    color: #343a40;
+    color: #2c3e50;
 }
 
 h3 {
     font-size: 1.3rem;
-    color: #495057;
+    color: #546e7a;
     margin-top: 15px;
+    font-weight: bold;
 }
 
-p, li {
-    font-size: 1rem;
-    line-height: 1.6;
+/* Grid Layout */
+.row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
 }
 
+@media (max-width: 768px) {
+    .row {
+        grid-template-columns: 1fr;
+    }
+}
+
+.col-md-6 {
+    background: #f0f4f8;
+    padding: 15px;
+    border-radius: 6px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+/* List Styling */
 ul {
     padding-left: 20px;
+    list-style-type: square;
 }
 
 li {
     margin-bottom: 8px;
 }
 
+/* Footer */
 footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0;
     text-align: center;
     font-size: 0.9rem;
-    color: #6c757d;
-    margin-top: 20px;
+    color: #2c3e50;
+    background-color: #bbdefb;
+    border-radius: 0 0 8px 8px;
+    margin-top: 30px;
 }
